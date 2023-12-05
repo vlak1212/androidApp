@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
-    <!-- res/layout/registration_form.xml -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
             android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextUsername"
+                android:id="@+id/usernameInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tên đăng nhập" />
@@ -31,27 +30,36 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="377dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="321dp"
-                android:layout_height="61dp"
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Mật khẩu"
                 android:inputType="textPassword" />
 
-            <ImageView
-                android:id="@+id/infoIcon"
-                android:layout_width="51dp"
-                android:layout_height="53dp"
-                android:layout_gravity="end"
-                android:contentDescription="Info icon"
-                android:padding="8dp"
-                android:src="@drawable/info_icon"
-                android:visibility="visible" />
 
+            <!--            <TextView-->
+<!--                android:id="@+id/passwordMessage"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="*Mật khẩu phải có ít nhất một kí tự in hoa, một chữ số và một kí tự đặc biệt*"-->
+<!--                android:textColor="#FF0000"-->
+<!--                android:textStyle="italic"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingTop="4dp"/>-->
+<!--            <ImageView-->
+<!--                android:id="@+id/infoIcon"-->
+<!--                android:layout_width="51dp"-->
+<!--                android:layout_height="53dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:contentDescription="Info icon"-->
+<!--                android:padding="8dp"-->
+<!--                android:src="@drawable/info_icon"-->
+<!--                android:visibility="visible" />-->
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -62,7 +70,7 @@
             android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextConfirmPassword"
+                android:id="@+id/confirmPasswordInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Xác nhận mật khẩu"
